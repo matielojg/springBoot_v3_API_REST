@@ -17,11 +17,11 @@ import lombok.NoArgsConstructor;
 import med.voll.api.endereco.Endereco;
 
 @Table(name = "medicos")
-@Entity(name = "Medico")
 @Getter
 @NoArgsConstructor // Gera o constructor default sem argumentos, JPA exige em todas as entidades
 @AllArgsConstructor // Constructor que recebe todos os campos
 @EqualsAndHashCode(of = "id") // permite que objetos sejam comparados por valor e usados como chaves em estruturas de dados baseadas em hash
+@Entity
 public class Medico {
 
 	@Id
@@ -30,6 +30,7 @@ public class Medico {
 	private String nome;
 	private String email;
 	private String crm;
+	private String telefone;
 
 	@Enumerated(EnumType.STRING)
 	private Especialidade especialidade;
@@ -46,6 +47,7 @@ public class Medico {
 		this.nome = dados.nome();
 		this.email = dados.email();
 		this.crm = dados.crm();
+		this.telefone = dados.telefone();
 		this.endereco = new Endereco(dados.endereco());
 		this.especialidade = dados.especialidade();
 	}
