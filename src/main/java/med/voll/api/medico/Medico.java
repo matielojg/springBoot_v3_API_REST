@@ -1,7 +1,6 @@
 package med.voll.api.medico;
 
-import org.hibernate.annotations.Table;
-import org.springframework.data.annotation.Id;
+
 
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
@@ -9,18 +8,20 @@ import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import med.voll.api.endereco.Endereco;
 
-@Table(appliesTo = "medicos")
+@Table(name = "medicos")
 @Entity(name = "Medico")
-@Getter 			
-@NoArgsConstructor  // Gera o constructor default sem argumentos, JPA exige em todas as entidades
+@Getter
+@NoArgsConstructor // Gera o constructor default sem argumentos, JPA exige em todas as entidades
 @AllArgsConstructor // Constructor que recebe todos os campos
-@EqualsAndHashCode(of="id") //permite que objetos sejam comparados por valor e usados como chaves em estruturas de dados baseadas em hash
+@EqualsAndHashCode(of = "id") // permite que objetos sejam comparados por valor e usados como chaves em estruturas de dados baseadas em hash
 public class Medico {
 
 	@Id
@@ -34,11 +35,18 @@ public class Medico {
 	private Especialidade especialidade;
 
 	/**
-	 *	Embeddable Attribute 
-	 *	Assim eu consigo separar a classe endereço, porém no banco fará parte da mesma tabela "médicos"
-	 *	Necessário anotar na classe endereço com @Embeddable
-	 */ 
+	 * Embeddable Attribute Assim eu consigo separar a classe endereço, porém no
+	 * banco fará parte da mesma tabela "médicos" Necessário anotar na classe
+	 * endereço com @Embeddable
+	 */
 	@Embedded
 	private Endereco endereco;
 
+	public Medico(DadosCadastroMedico dados) {
+		this.nome = dados.nome();
+		this.email = dados.email();
+		this.crm = dados.crm();
+		this.endereco = new Endereco(dados.endereco());
+		this.especialidade = dados.especialidade();
+	}
 }
