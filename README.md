@@ -1,5 +1,8 @@
 # SpringBoot_v3_API_REST
 
+## [Mockup Mobile - Figma](https://www.figma.com/file/N4CgpJqsg7gjbKuDmra3EV/Voll.med?node-id=45%3A3017&t=AOkfskcNyjPEaq5T-0)
+## [Trello](https://trello.com/b/O0lGCsKb/api-voll-med)
+
 ## Neste projeto foi possível: 
 - Criar uma API Rest em Java com Spring Boot
 - Desenvolver CRUDs utilizando o banco de dados MySQL
