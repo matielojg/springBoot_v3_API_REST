@@ -1,7 +1,5 @@
 package med.voll.api.medico;
 
-
-
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -20,7 +18,8 @@ import med.voll.api.endereco.Endereco;
 @Getter
 @NoArgsConstructor // Gera o constructor default sem argumentos, JPA exige em todas as entidades
 @AllArgsConstructor // Constructor que recebe todos os campos
-@EqualsAndHashCode(of = "id") // permite que objetos sejam comparados por valor e usados como chaves em estruturas de dados baseadas em hash
+@EqualsAndHashCode(of = "id") // permite que objetos sejam comparados por valor e usados como chaves em
+								// estruturas de dados baseadas em hash
 @Entity
 public class Medico {
 
@@ -48,7 +47,19 @@ public class Medico {
 		this.email = dados.email();
 		this.crm = dados.crm();
 		this.telefone = dados.telefone();
-		this.endereco = new Endereco(dados.endereco());
 		this.especialidade = dados.especialidade();
+		this.endereco = new Endereco(dados.endereco());
+	}
+	
+	public void atualizarInformacoes(DadosAtualizacaoMedico dados) {
+		if (dados.nome() != null) {
+			this.nome = dados.nome();
+		}
+		if (dados.telefone() != null) {
+			this.telefone = dados.telefone();
+		}
+		if (dados.endereco() != null) {
+			this.endereco.atualizarInformacoes(dados.endereco());
+		}
 	}
 }
