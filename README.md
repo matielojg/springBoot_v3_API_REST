@@ -44,7 +44,7 @@
 [DTO ou Entidades?](https://cursos.alura.com.br/course/spring-boot-3-desenvolva-api-rest-java/task/116068)
 <p>
 -	Vantagens em usar DTOs e não entidades inteiras JPA:<br>
-		[Diminui vulnerabilidades](https://cheatsheetseries.owasp.org/cheatsheets/Mass_Assignment_Cheat_Sheet.html);<br>
+		[Diminui as vulnerabilidades](https://cheatsheetseries.owasp.org/cheatsheets/Mass_Assignment_Cheat_Sheet.html);<br>
 		Filtram dados sensíveis no retorno do JSON;<br>
 		Evita loops de stackOverflow através de relacionamentos.<br>
 </p>
@@ -54,4 +54,18 @@
 -	Utilizei a interface Pageable do Spring para realizar consultas com paginação;
 -	Controlei a paginação e a ordenação dos dados devolvidos pela API com os parâmetros page, size e sort;
 -	Configurei o projeto para que os comandos SQL sejam exibidos no console.
+```
+
+### Módulo 5 - Requisições PUT E DELETE
+
+
+[Mass Assignment Attack](https://cursos.alura.com.br/course/spring-boot-3-desenvolva-api-rest-java/task/116073) : ocorre quando um usuário é capaz de inicializar ou substituir parâmetros que não deveriam ser modificados na aplicação.
+
+
+```md
+-	Mapear requisições PUT com a anotação @PutMapping;
+-	Escrever um código para atualizar informações de um registro no banco de dados;
+-	Mapear requisições DELETE com a anotação @DeleteMapping;
+-	Mapear parâmetros dinâmicos em URL com a anotação @PathVariable;
+-	Implementar o conceito de exclusão lógica com o uso de um atributo booleano.
 ```
