@@ -38,3 +38,20 @@
 -	Realizar validações com Bean Validation utilizando algumas de suas anotações, como a @NotBlank.
 ```
 -	[Bean Validation 3.0 - Specifications](https://jakarta.ee/specifications/bean-validation/3.0/jakarta-bean-validation-spec-3.0.html#builtinconstraints)
+
+### Módulo 4 - Requisições GET
+
+[DTO ou Entidades?](https://cursos.alura.com.br/course/spring-boot-3-desenvolva-api-rest-java/task/116068)
+<p>
+-	Vantagens em usar DTOs e não entidades inteiras JPA:<br>
+		[Diminui vulnerabilidades](https://cheatsheetseries.owasp.org/cheatsheets/Mass_Assignment_Cheat_Sheet.html);<br>
+		Filtram dados sensíveis no retorno do JSON;<br>
+		Evita loops de stackOverflow através de relacionamentos.<br>
+</p>
+
+```md
+-	Utilizei a anotação @GetMapping para mapear métodos em Controllers que produzem dados;
+-	Utilizei a interface Pageable do Spring para realizar consultas com paginação;
+-	Controlei a paginação e a ordenação dos dados devolvidos pela API com os parâmetros page, size e sort;
+-	Configurei o projeto para que os comandos SQL sejam exibidos no console.
+```
