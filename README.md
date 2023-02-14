@@ -2,12 +2,13 @@
 
 Enjoy the code. The coffee is on us :coffee:
 
-[Ir para a parte 2 do curso](#parte-2-do-curso)
+ [Módulo II do curso](#módulo-2-do-curso)
 
+	Recursos extras:
 -[Mockup Mobile - Figma](https://www.figma.com/file/N4CgpJqsg7gjbKuDmra3EV/Voll.med?node-id=45%3A3017&t=AOkfskcNyjPEaq5T-0)<br/>
--[Trello](https://trello.com/b/O0lGCsKb/api-voll-med)
+-[Trello do Projeto](https://trello.com/b/O0lGCsKb/api-voll-med)
 
-Nesta etapa foi possível: 
+	Checklist do Módulo I: 
 - [x] Criar uma API Rest em Java com Spring Boot
 - [x] Desenvolver CRUDs utilizando o banco de dados MySQL
 - [x] Utilizar o Flyway como ferramenta de Migrations da API
@@ -61,18 +62,18 @@ Nesta etapa foi possível:
 >>-	Implementar o conceito de exclusão lógica com o uso de um atributo booleano.
 >>- [Mass Assignment Attack](https://cursos.alura.com.br/course/spring-boot-3-desenvolva-api-rest-java/task/116073) : ocorre quando um usuário é capaz de inicializar ou substituir parâmetros que não deveriam ser modificados na aplicação.
 ----
-#Parte 2 do curso
 
-##[Spring Boot 3: aplique boas práticas e proteja uma API Rest](https://cursos.alura.com.br/course/spring-boot-aplique-boas-praticas-proteja-api-rest)
+### Módulo 2 do curso
 
--Nesta etapa foi possível: 
-- [ ] Padronizar os retornos dos controllers da API
-- [ ] Utilizar os códigos HTTP corretamente
-- [ ] Adicionar o módulo Spring Security no projeto
-- [ ] Implementar um mecanismo de autenticação na API
-- [ ] Realizar o controle de acesso na API
-- [ ] Utilizar Json Web Token para controlar o acesso na API
+[Spring Boot 3: aplique boas práticas e proteja uma API Rest](https://cursos.alura.com.br/course/spring-boot-aplique-boas-praticas-proteja-api-rest)
 
+	Checklist do módulo II:
+- [ ] 	Padronizar os retornos dos controllers da API
+- [ ] 	Utilizar os códigos HTTP corretamente
+- [ ] 	Adicionar o módulo Spring Security no projeto
+- [ ] 	Implementar um mecanismo de autenticação na API
+- [ ] 	Realizar o controle de acesso na API
+- [ ] 	Utilizar Json Web Token para controlar o acesso na API
 
 ----
 :smirk:[Ajuda com os markdowns](https://learn.microsoft.com/en-us/azure/devops/project/wiki/markdown-guidance?view=azure-devops)
