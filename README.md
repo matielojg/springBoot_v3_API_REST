@@ -2,7 +2,7 @@
 
 Enjoy the code. The coffee is on us :coffee:
 
- [Módulo II do curso](#módulo-2-do-curso)
+ [Módulo II do curso](#modulo-2-do-curso)
 
 	Recursos extras:
 -[Mockup Mobile - Figma](https://www.figma.com/file/N4CgpJqsg7gjbKuDmra3EV/Voll.med?node-id=45%3A3017&t=AOkfskcNyjPEaq5T-0)<br/>
@@ -63,7 +63,7 @@ Enjoy the code. The coffee is on us :coffee:
 >>- [Mass Assignment Attack](https://cursos.alura.com.br/course/spring-boot-3-desenvolva-api-rest-java/task/116073) : ocorre quando um usuário é capaz de inicializar ou substituir parâmetros que não deveriam ser modificados na aplicação.
 ----
 
-### Módulo 2 do curso
+### Modulo 2 do curso
 
 [Spring Boot 3: aplique boas práticas e proteja uma API Rest](https://cursos.alura.com.br/course/spring-boot-aplique-boas-praticas-proteja-api-rest)
 
