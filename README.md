@@ -2,10 +2,10 @@
 
 Enjoy the code. The coffee is on us :coffee:
 
-[Parte 2 do curso](#parte-2-do-curso)
+[Ir para a parte 2 do curso](#parte-2-do-curso)
 
--	[Mockup Mobile - Figma](https://www.figma.com/file/N4CgpJqsg7gjbKuDmra3EV/Voll.med?node-id=45%3A3017&t=AOkfskcNyjPEaq5T-0)
--	[Trello](https://trello.com/b/O0lGCsKb/api-voll-med)
+-[Mockup Mobile - Figma](https://www.figma.com/file/N4CgpJqsg7gjbKuDmra3EV/Voll.med?node-id=45%3A3017&t=AOkfskcNyjPEaq5T-0)<br/>
+-[Trello](https://trello.com/b/O0lGCsKb/api-voll-med)
 
 Nesta etapa foi possível: 
 - [x] Criar uma API Rest em Java com Spring Boot
@@ -30,7 +30,6 @@ Nesta etapa foi possível:
 >>-	Enviar dados para API no formato JSON;
 >>-	Utilizar a anotação @RequestBody para receber os dados do corpo da requisição em um parâmetro no Controller;
 >>-	Utilizar o padrão DTO (Data Transfer Object), via Java Records, para representar os dados recebidos em uma requisição POST.
-```
 
 > Módulo 3 - Spring Data JPA
 
@@ -61,18 +60,18 @@ Nesta etapa foi possível:
 >>-	Mapear parâmetros dinâmicos em URL com a anotação @PathVariable;
 >>-	Implementar o conceito de exclusão lógica com o uso de um atributo booleano.
 >>- [Mass Assignment Attack](https://cursos.alura.com.br/course/spring-boot-3-desenvolva-api-rest-java/task/116073) : ocorre quando um usuário é capaz de inicializar ou substituir parâmetros que não deveriam ser modificados na aplicação.
+----
+#Parte 2 do curso
 
-##Parte 2 do curso
+##[Spring Boot 3: aplique boas práticas e proteja uma API Rest](https://cursos.alura.com.br/course/spring-boot-aplique-boas-praticas-proteja-api-rest)
 
-###[Spring Boot 3: aplique boas práticas e proteja uma API Rest](https://cursos.alura.com.br/course/spring-boot-aplique-boas-praticas-proteja-api-rest)
-
-Nesta etapa foi possível: 
-- [ ]Padronizar os retornos dos controllers da API
-- [ ]Utilizar os códigos HTTP corretamente
-- [ ]Adicionar o módulo Spring Security no projeto
-- [ ]Implementar um mecanismo de autenticação na API
-- [ ]Realizar o controle de acesso na API
-- [ ]Utilizar Json Web Token para controlar o acesso na API
+-Nesta etapa foi possível: 
+- [ ] Padronizar os retornos dos controllers da API
+- [ ] Utilizar os códigos HTTP corretamente
+- [ ] Adicionar o módulo Spring Security no projeto
+- [ ] Implementar um mecanismo de autenticação na API
+- [ ] Realizar o controle de acesso na API
+- [ ] Utilizar Json Web Token para controlar o acesso na API
 
 
 ----
