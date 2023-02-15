@@ -1,11 +1,11 @@
 _type: export
 __export_format: 4
-__export_date: 2023-02-15T17:22:15.540Z
+__export_date: 2023-02-15T21:38:56.465Z
 __export_source: insomnia.desktop.app:v2022.6.0
 resources:
   - _id: req_8a7c4c05443b48fc86178b49cc47c926
     parentId: fld_5a5f96233e34403c842ad901488384ac
-    modified: 1676481635495
+    modified: 1676484707801
     created: 1675261057942
     url: localhost:8080/medicos
     name: Cadastro de médico
@@ -15,10 +15,10 @@ resources:
       mimeType: application/json
       text: |-
         {
-        "nome": "Marcio Queiroz",
-        "email": "marcio.queiroz@voll.med",
-        "crm": "654334",
-        "telefone":"45999454536",
+        "nome": "Marcio Queiroz Goulart",
+        "email": "marcio.goulart@voll.med",
+        "crm": "654332",
+        "telefone":"45977454536",
         "especialidade": "ORTOPEDIA",
         "endereco": {
             "logradouro": "rua 1",
@@ -169,7 +169,7 @@ resources:
     _type: request
   - _id: req_6dcf5c2240094eb6813aa52b56726b10
     parentId: fld_5a5f96233e34403c842ad901488384ac
-    modified: 1676481652567
+    modified: 1676496529884
     created: 1676139957928
     url: localhost:8080/medicos
     name: Atualizar Médicos
@@ -343,9 +343,9 @@ resources:
     _type: request
   - _id: req_105fb462898a45f68ad7d6021213926d
     parentId: fld_30356bb139bf44eba0aa0feaca79c737
-    modified: 1676481567526
+    modified: 1676482591180
     created: 1676479342569
-    url: localhost:8080/pacientes/2
+    url: localhost:8080/pacientes/6999
     name: Detalhar paciente
     description: ""
     method: GET
@@ -390,6 +390,45 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
+  - _id: req_0fa5d481dbae4159a1d05f3e69996366
+    parentId: fld_ef2e9291ba204bb9842458d4ea39193e
+    modified: 1676497045968
+    created: 1676494841527
+    url: localhost:8080/login
+    name: Efetuar Login
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"login":"mati",
+        	"senha":"123"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1676496855307
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_ef2e9291ba204bb9842458d4ea39193e
+    parentId: wrk_fd199bd3ce2342229a719d97cb33764d
+    modified: 1676496537754
+    created: 1676496537754
+    name: Usuario
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1676496537754
+    _type: request_group
   - _id: env_5fac8e7892689e26852d22deb983f390a7b5fa40
     parentId: wrk_fd199bd3ce2342229a719d97cb33764d
     modified: 1675261127543
@@ -403,10 +442,19 @@ resources:
     _type: environment
   - _id: jar_5fac8e7892689e26852d22deb983f390a7b5fa40
     parentId: wrk_fd199bd3ce2342229a719d97cb33764d
-    modified: 1675261047735
+    modified: 1676488607624
     created: 1675261047735
     name: Default Jar
-    cookies: []
+    cookies:
+      - key: JSESSIONID
+        value: B5A8879F553051DC4B4CBE4544583FE9
+        domain: localhost
+        path: /
+        httpOnly: true
+        hostOnly: true
+        creation: 2023-02-15T19:16:47.624Z
+        lastAccessed: 2023-02-15T19:16:47.624Z
+        id: "5083697761304073"
     _type: cookie_jar
   - _id: spc_a2fea762e11b46a19f614c33ca807b71
     parentId: wrk_fd199bd3ce2342229a719d97cb33764d
