@@ -68,12 +68,20 @@ Recursos extras:</br>
 [Spring Boot 3: aplique boas práticas e proteja uma API Rest](https://cursos.alura.com.br/course/spring-boot-aplique-boas-praticas-proteja-api-rest)
 
 <strong>Checklist do módulo II:</strong>
-- [ ] 	Padronizar os retornos dos controllers da API
+- [x] 	Padronizar os retornos dos controllers da API
 - [ ] 	Utilizar os códigos HTTP corretamente
 - [ ] 	Adicionar o módulo Spring Security no projeto
 - [ ] 	Implementar um mecanismo de autenticação na API
 - [ ] 	Realizar o controle de acesso na API
 - [ ] 	Utilizar Json Web Token para controlar o acesso na API
+
+<strong>Submódulo 1 - Lidando com Tratamento de Erros</strong>
+>-	Criar uma classe para isolar o tratamento de exceptions da API, com a utilização da anotação @RestControllerAdvice;
+>-	Utilizar a anotação @ExceptionHandler, do Spring, para indicar qual exception um determinado método da classe de tratamento de erros deve capturar;
+>-	Tratar erros do tipo 404 (Not Found) na classe de tratamento de erros;
+>-	Tratar erros do tipo 400 (Bad Request), para erros de validação do Bean Validation, na classe de tratamento de erros;
+>-	Simplificar o JSON devolvido pela API em casos de erro de validação do Bean Validation.
+>-	[Common Application Properties](https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html).
 
 ----
 
