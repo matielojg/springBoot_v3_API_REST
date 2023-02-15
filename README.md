@@ -6,7 +6,8 @@ Enjoy the code. The coffee is on us :coffee:
 
 Recursos extras:</br>
 -[Mockup Mobile - Figma](https://www.figma.com/file/N4CgpJqsg7gjbKuDmra3EV/Voll.med?node-id=45%3A3017&t=AOkfskcNyjPEaq5T-0)<br/>
--[Trello do Projeto](https://trello.com/b/O0lGCsKb/api-voll-med)
+-[Trello do Projeto](https://trello.com/b/O0lGCsKb/api-voll-med)</br>
+-[Banco de dados](#banco-de-dados)</br>
 
 <strong>Checklist do Módulo I: </strong>
 - [x] Criar uma API Rest em Java com Spring Boot
@@ -74,6 +75,15 @@ Recursos extras:</br>
 - [ ] 	Realizar o controle de acesso na API
 - [ ] 	Utilizar Json Web Token para controlar o acesso na API
 
+----
+
+### Banco de Dados
+
+Se baixou novamente o projeto e já possuir o banco com as tabelas criadas, será necessário:
+>-	use vollmed-api;
+>-	delete from flyway_schema_history where success =0;
+>-	dropar as tabelas medicos e pacientes;
+>-	Rodar novamente o projeto.
 ----
 :smirk:[Ajuda com os markdowns](https://learn.microsoft.com/en-us/azure/devops/project/wiki/markdown-guidance?view=azure-devops)
 
