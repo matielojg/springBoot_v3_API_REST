@@ -68,7 +68,7 @@ Recursos extras:</br>
 [Spring Boot 3: aplique boas práticas e proteja uma API Rest](https://cursos.alura.com.br/course/spring-boot-aplique-boas-praticas-proteja-api-rest)
 
 <strong>Checklist do módulo II:</strong>
-- [ ] 	Padronizar os retornos dos controllers da API
+- [x] 	Padronizar os retornos dos controllers da API
 - [ ] 	Utilizar os códigos HTTP corretamente
 - [ ] 	Adicionar o módulo Spring Security no projeto
 - [ ] 	Implementar um mecanismo de autenticação na API
