@@ -29,13 +29,23 @@ import med.voll.api.medico.MedicoRepository;
 public class MedicoController {
 
 	@Autowired
-	private MedicoRepository repository;
+	private MedicoRepository medicoRepository;
 
+	/**
+	 * Metodo cadastrar deve devolver o código 201, o cabeçalho location com a URI e
+	 * no corpo da resposta é necessário ter uma representação do recurso recém
+	 * criado.
+	 * 
+	 * @param dados
+	 * @param uriBuilder
+	 * @return code 201
+	 */
 	@PostMapping
 	@Transactional
 	public ResponseEntity cadastrar(@RequestBody @Valid DadosCadastroMedico dados, UriComponentsBuilder uriBuilder) {
+
 		var medico = new Medico(dados);
-		repository.save(new Medico(dados));
+		medicoRepository.save(new Medico(dados));
 
 		var uri = uriBuilder.path("/medicos/{id}").buildAndExpand(medico.getId()).toUri();
 		return ResponseEntity.created(uri).body(new DadosDetalhamentoMedico(medico));
@@ -43,30 +53,52 @@ public class MedicoController {
 
 	/**
 	 * Customização de paginação Trocar padrão da paginação com @PageableDefault
-	 * 
+	 *
 	 * @param paginacao
-	 * @return
+	 * @return code 200
 	 */
 	@GetMapping
 	public ResponseEntity<Page<DadosListagemMedico>> listar(
 			@PageableDefault(size = 10, sort = { "nome" }) Pageable paginacao) {
-		var page = repository.findAllByAtivoTrue(paginacao).map(DadosListagemMedico::new);
+		var page = medicoRepository.findAllByAtivoTrue(paginacao).map(DadosListagemMedico::new);
 		return ResponseEntity.ok(page);
 	}
 
+	/**
+	 * 
+	 * @param id
+	 * @return code 200
+	 */
+	@GetMapping("/{id}")
+	public ResponseEntity detalhar(@PathVariable Long id) {
+		var medico = medicoRepository.getReferenceById(id);
+		return ResponseEntity.ok(new DadosDetalhamentoMedico(medico));
+	}
+
+	/**
+	 * 
+	 * @param dados
+	 * @return code 200
+	 */
 	@PutMapping
 	@Transactional
 	public ResponseEntity atualizar(@RequestBody @Valid DadosAtualizacaoMedico dados) {
-		var medico = repository.getReferenceById(dados.id());
+		var medico = medicoRepository.getReferenceById(dados.id());
 		medico.atualizarInformacoes(dados);
 		return ResponseEntity.ok(new DadosDetalhamentoMedico(medico));
 	}
 
+	/**
+	 * 
+	 * @param id
+	 * @return 204
+	 */
 	@DeleteMapping("/{id}")
 	@Transactional
 	public ResponseEntity excluir(@PathVariable Long id) {
-		var medico = repository.getReferenceById(id);
+		var medico = medicoRepository.getReferenceById(id);
 		medico.excluir();
 		return ResponseEntity.noContent().build();
 	}
+
 }

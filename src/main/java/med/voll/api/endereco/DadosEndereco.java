@@ -1,6 +1,7 @@
 package med.voll.api.endereco;
 
-import jakarta.validation.constraints.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
 
 public record DadosEndereco(
 		@NotBlank
@@ -13,9 +14,9 @@ public record DadosEndereco(
 		@NotBlank
 		String cidade,
 		@NotBlank
-		String uf, 
-		String complemento, 
-		String numero 
+		String uf,
+		String complemento,
+		String numero
 		) {
 
 }

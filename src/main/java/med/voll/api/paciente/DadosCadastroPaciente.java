@@ -9,22 +9,22 @@ import jakarta.validation.constraints.Pattern;
 import med.voll.api.endereco.DadosEndereco;
 
 public record DadosCadastroPaciente(
-        @NotBlank 
+        @NotBlank
         String nome,
-        
-        @NotBlank 
-        @Email 
+
+        @NotBlank
+        @Email
         String email,
-        
-        @NotBlank 
+
+        @NotBlank
         String telefone,
-        
-        @NotBlank 
-        @Pattern(regexp = "\\d{3}\\.?\\d{3}\\.?\\d{3}\\-?\\d{2}") 
+
+        @NotBlank
+        @Pattern(regexp = "\\d{3}\\.?\\d{3}\\.?\\d{3}\\-?\\d{2}")
         String cpf,
-        
-        @NotNull 
-        @Valid 
+
+        @NotNull
+        @Valid
         DadosEndereco endereco
 ) {
 }
