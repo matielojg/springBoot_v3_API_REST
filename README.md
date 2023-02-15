@@ -38,7 +38,7 @@ Recursos extras:</br>
 >-	Mapear uma entidade JPA e criar uma interface Repository para ela;
 >-	Utilizar o Flyway como ferramenta de Migrations do projeto;
 >-	Realizar validações com Bean Validation utilizando algumas de suas anotações, como a @NotBlank.
->- [Bean Validation 3.0 - Specifications](https://jakarta.ee/specifications/bean-validation/3.0/jakarta-bean-validation-spec-3.0.html#builtinconstraints)
+>- 	Leitura recomendada: [Bean Validation 3.0 - Specifications](https://jakarta.ee/specifications/bean-validation/3.0/jakarta-bean-validation-spec-3.0.html#builtinconstraints)
 
 <strong>Submódulo 4 - Requisições GET</strong>
 
@@ -46,7 +46,7 @@ Recursos extras:</br>
 >-	Utilizei a interface Pageable do Spring para realizar consultas com paginação;
 >-	Controlei a paginação e a ordenação dos dados devolvidos pela API com os parâmetros page, size e sort;
 >-	Configurei o projeto para que os comandos SQL sejam exibidos no console.
->- [DTO ou Entidades?](https://cursos.alura.com.br/course/spring-boot-3-desenvolva-api-rest-java/task/116068)
+>- 	Leitura recomendada: [DTO ou Entidades?](https://cursos.alura.com.br/course/spring-boot-3-desenvolva-api-rest-java/task/116068)
 >-	Vantagens em usar DTOs e não entidades inteiras JPA:<br/>
 		-	[Diminui as vulnerabilidades](https://cheatsheetseries.owasp.org/cheatsheets/Mass_Assignment_Cheat_Sheet.html);<br/>
 		-	Filtram dados sensíveis no retorno do JSON;<br/>
@@ -60,7 +60,7 @@ Recursos extras:</br>
 >-	Mapear requisições DELETE com a anotação @DeleteMapping;
 >-	Mapear parâmetros dinâmicos em URL com a anotação @PathVariable;
 >-	Implementar o conceito de exclusão lógica com o uso de um atributo booleano.
->- [Mass Assignment Attack](https://cursos.alura.com.br/course/spring-boot-3-desenvolva-api-rest-java/task/116073) : ocorre quando um usuário é capaz de inicializar ou substituir parâmetros que não deveriam ser modificados na aplicação.
+>- 	Leitura recomendada: [Mass Assignment Attack](https://cursos.alura.com.br/course/spring-boot-3-desenvolva-api-rest-java/task/116073) : ocorre quando um usuário é capaz de inicializar ou substituir parâmetros que não deveriam ser modificados na aplicação.
 ----
 
 ### Modulo 2 do curso
@@ -81,7 +81,14 @@ Recursos extras:</br>
 >-	Tratar erros do tipo 404 (Not Found) na classe de tratamento de erros;
 >-	Tratar erros do tipo 400 (Bad Request), para erros de validação do Bean Validation, na classe de tratamento de erros;
 >-	Simplificar o JSON devolvido pela API em casos de erro de validação do Bean Validation.
->-	[Common Application Properties](https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html).
+>-	Leitura recomendada: [Common Application Properties](https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html).
+
+<strong>Submódulo 2 - Spring Security</strong>
+>-	Funciona o processo de autenticação e autorização em uma API Rest;
+>-	Leitura recomendada: [Tipos de Autenticação](https://www.alura.com.br/artigos/tipos-de-autenticacao);
+>-	Adicionar o Spring Security ao projeto;
+>-	Funciona o comportamento padrão do Spring Security em uma aplicação;
+>-	Implementar o processo de autenticação na API, de maneira Stateless, utilizando as classes e configurações do Spring Security.
 
 ----
 
