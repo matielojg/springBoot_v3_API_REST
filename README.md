@@ -71,31 +71,37 @@ Recursos extras:</br>
 - [x] 	Padronizar os retornos dos controllers da API
 - [x] 	Utilizar os códigos HTTP corretamente
 - [x] 	Adicionar o módulo Spring Security no projeto
-- [ ] 	Implementar um mecanismo de autenticação na API
+- [x] 	Implementar um mecanismo de autenticação na API
 - [ ] 	Realizar o controle de acesso na API
 - [ ] 	Utilizar Json Web Token para controlar o acesso na API
 
 <strong>Submódulo 1 - </strong>
->-	Utilizar a classe ResponseEntity, do Spring, para personalizar os retornos dos métodos de uma classe Controller;
->-	Modificar o código HTTP devolvido nas respostas da API;
->-	Adicionar cabeçalhos nas respostas da API;
->-	Utilizar os códigos HTTP mais apropriados para cada operação realizada na API.
+>-	Utilizei a classe ResponseEntity, do Spring, para personalizar os retornos dos métodos de uma classe Controller;
+>-	Modifiquei o código HTTP devolvido nas respostas da API;
+>-	Adicionei cabeçalhos nas respostas da API;
+>-	Utilizei os códigos HTTP mais apropriados para cada operação realizada na API.
 
 <strong>Submódulo 2 - Lidando com Tratamento de Erros</strong>
->-	Criar uma classe para isolar o tratamento de exceptions da API, com a utilização da anotação @RestControllerAdvice;
->-	Utilizar a anotação @ExceptionHandler, do Spring, para indicar qual exception um determinado método da classe de tratamento de erros deve capturar;
->-	Tratar erros do tipo 404 (Not Found) na classe de tratamento de erros;
->-	Tratar erros do tipo 400 (Bad Request), para erros de validação do Bean Validation, na classe de tratamento de erros;
->-	Simplificar o JSON devolvido pela API em casos de erro de validação do Bean Validation.
+>-	Criei uma classe para isolar o tratamento de exceptions da API, com a utilização da anotação @RestControllerAdvice;
+>-	Utilizei a anotação @ExceptionHandler, do Spring, para indicar qual exception um determinado método da classe de tratamento de erros deve capturar;
+>-	Tratei erros do tipo 404 (Not Found) na classe de tratamento de erros;
+>-	Tratei erros do tipo 400 (Bad Request), para erros de validação do Bean Validation, na classe de tratamento de erros;
+>-	Simplifiquei o JSON devolvido pela API em casos de erro de validação do Bean Validation.
 >-	Leitura recomendada: [Common Application Properties](https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html).
 
 <strong>Submódulo 3 - Spring Security</strong>
->-	Funciona o processo de autenticação e autorização em uma API Rest;
+>-	Aprendi o funcionamento do processo de autenticação e autorização em uma API Rest;
 >-	Leitura recomendada: [Tipos de Autenticação](https://www.alura.com.br/artigos/tipos-de-autenticacao);
->-	Adicionar o Spring Security ao projeto;
->-	Funciona o comportamento padrão do Spring Security em uma aplicação;
->-	Implementar o processo de autenticação na API, de maneira Stateless, utilizando as classes e configurações do Spring Security.
+>-	Adicionei o Spring Security ao projeto;
+>-	Vi o comportamento padrão do Spring Security em uma aplicação, sendo necessário logar na aplicação;
+>-	Implementei o processo de autenticação na API, de maneira Stateless, utilizando as classes e configurações do Spring Security.
 >-	Leitura recomendada: [Documentação Spring Data](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/)
+
+<strong>Submódulo 4 - JSON Web Token</strong>
+>-	Adicionei a biblioteca Auth0 java-jwt como dependência do projeto;
+>-	Utilizei essa biblioteca para realizar a geração de um token na API;
+>-	Injetei uma propriedade do arquivo application.properties em uma classe gerenciada pelo Spring, utilizando a anotação @Value;
+>-	Devolvi um token gerado na API quando um usuário se autenticar nela.
 
 
 ----
