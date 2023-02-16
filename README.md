@@ -72,8 +72,8 @@ Recursos extras:</br>
 - [x] 	Utilizar os códigos HTTP corretamente
 - [x] 	Adicionar o módulo Spring Security no projeto
 - [x] 	Implementar um mecanismo de autenticação na API
-- [ ] 	Realizar o controle de acesso na API
-- [ ] 	Utilizar Json Web Token para controlar o acesso na API
+- [x] 	Realizar o controle de acesso na API
+- [x] 	Utilizar Json Web Token para controlar o acesso na API
 
 <strong>Submódulo 1 - </strong>
 >-	Utilizei a classe ResponseEntity, do Spring, para personalizar os retornos dos métodos de uma classe Controller;
@@ -103,6 +103,12 @@ Recursos extras:</br>
 >-	Injetei uma propriedade do arquivo application.properties em uma classe gerenciada pelo Spring, utilizando a anotação @Value;
 >-	Devolvi um token gerado na API quando um usuário se autenticar nela.
 
+<strong>Submódulo 5 - Controle de Acesso</strong>
+>-	Funcionam os Filters em uma requisição;
+>-	Implementar um filter criando uma classe que herda da classe OncePerRequestFilter, do Spring;
+>-	Utilizar a biblioteca Auth0 java-jwt para realizar a validação dos tokens recebidos na API;
+>-	Realizar o processo de autenticação da requisição, utilizando a classe SecurityContextHolder, do Spring;
+>-	Liberar e restringir requisições, de acordo com a URL e o verbo do protocolo HTTP.
 
 ----
 
