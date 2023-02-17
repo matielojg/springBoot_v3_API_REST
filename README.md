@@ -111,12 +111,12 @@ Recursos extras:</br>
 >-	Realizar o processo de autenticação da requisição, utilizando a classe SecurityContextHolder, do Spring;
 >-	Liberar e restringir requisições, de acordo com a URL e o verbo do protocolo HTTP.
 
-----
-
 ### Modulo 3 do curso
 
-<strong>Checklist do módulo II:</strong>
-- [ ] 	Aprenda a isolar códigos de regras de negócio em uma aplicação
+[Spring Boot 3: documente, teste e prepare uma API para o deploy](https://cursos.alura.com.br/course/spring-boot-3-documente-teste-prepare-api-deploy)</br>
+
+<strong>Checklist do módulo III:</strong>
+- [x] 	Aprenda a isolar códigos de regras de negócio em uma aplicação
 - [ ] 	Implemente princípios SOLID
 - [ ] 	Documente uma API seguindo o padrão OpenAPI
 - [ ] 	Saiba como escrever testes automatizados em uma aplicação com Spring Boot
@@ -131,6 +131,7 @@ Recursos extras:</br>
 >-	Realizei validações de integridade das informações que chegam na API;
 >-	Implementei uma consulta JPQL (Java Persistence Query Language) complexa em uma interface repository, utilizando para isso a anotação @Query.
 
+----
 
 ### Banco de Dados
 
