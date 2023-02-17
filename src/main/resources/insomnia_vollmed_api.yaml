@@ -1,6 +1,6 @@
 _type: export
 __export_format: 4
-__export_date: 2023-02-15T21:38:56.465Z
+__export_date: 2023-02-16T04:49:16.402Z
 __export_source: insomnia.desktop.app:v2022.6.0
 resources:
   - _id: req_8a7c4c05443b48fc86178b49cc47c926
@@ -64,16 +64,19 @@ resources:
     _type: workspace
   - _id: req_9c43b15019d94dd2a7ace7583a548ea1
     parentId: fld_5a5f96233e34403c842ad901488384ac
-    modified: 1676479057329
+    modified: 1676522151746
     created: 1675974409964
     url: localhost:8080/medicos
-    name: Listagem de Médicos
+    name: Listagem de Médicos com Token
     description: ""
     method: GET
     body: {}
     parameters: []
     headers: []
-    authentication: {}
+    authentication:
+      type: bearer
+      token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXRpIiwiaXNzIjoiQVBJIFZvbGwubWVkIiwiZXhwIjoxNjc2NTI4MDM0fQ.4I57FKU7VFNCqLthoKb56YjG-EnLlYzdTrigvWlxpTo
+      disabled: false
     metaSortKey: -1676049386302.5
     isPrivate: false
     settingStoreCookies: true
@@ -226,16 +229,18 @@ resources:
     _type: request
   - _id: req_48d5518526db4a27aa99fb4cd7fc893d
     parentId: fld_5a5f96233e34403c842ad901488384ac
-    modified: 1676479113825
+    modified: 1676521878887
     created: 1676479071629
-    url: localhost:8080/medicos/2
+    url: localhost:8080/medicos/1
     name: Detalhar Médico
     description: ""
     method: GET
     body: {}
     parameters: []
     headers: []
-    authentication: {}
+    authentication:
+      type: bearer
+      token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXRpIiwiaXNzIjoiQVBJIFZvbGwubWVkIiwiZXhwIjoxNjc2NTI5MDU4fQ.ZcQ5C9Ux4_Aw-5WQxSpbok5qy-InRSXCqzyR1c2TZ-o
     metaSortKey: -1676049386290
     isPrivate: false
     settingStoreCookies: true
@@ -392,11 +397,22 @@ resources:
     _type: request
   - _id: req_0fa5d481dbae4159a1d05f3e69996366
     parentId: fld_ef2e9291ba204bb9842458d4ea39193e
-    modified: 1676497045968
+    modified: 1676521087383
     created: 1676494841527
     url: localhost:8080/login
     name: Efetuar Login
-    description: ""
+    description: >+
+      NOTE: login: mati	/ senha: 123 /  senha bcrypt:
+      $2a$12$ewu6HkUtOayXMQfhcZ/beegBVcqPNx.hc.2dbROUw2Hrr2LNHcEFW  
+
+
+      ```
+
+      insert into usuarios (login, senha) values ("mati","$2a$12$ewu6HkUtOayXMQfhcZ/beegBVcqPNx.hc.2dbROUw2Hrr2LNHcEFW");
+
+      ```
+
+
     method: POST
     body:
       mimeType: application/json
@@ -409,7 +425,9 @@ resources:
     headers:
       - name: Content-Type
         value: application/json
-    authentication: {}
+    authentication:
+      type: bearer
+      token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXRpIiwiaXNzIjoiQVBJIFZvbGwubWVkIiwiZXhwIjoxNjc2NTI2MzQ3fQ.0tuAEr4segQ8e2ElbfTfpna2vYsP2lWPGuTUwjtc-fY
     metaSortKey: -1676496855307
     isPrivate: false
     settingStoreCookies: true

@@ -2,7 +2,8 @@
 
 Enjoy the code. The coffee is on us :coffee:
 
- [Módulo II do curso](#modulo-2-do-curso)
+ [Módulo II do curso](#modulo-2-do-curso)</br>
+ [Módulo III do curso](#modulo-3-do-curso)</br>
 
 Recursos extras:</br>
 -[Mockup Mobile - Figma](https://www.figma.com/file/N4CgpJqsg7gjbKuDmra3EV/Voll.med?node-id=45%3A3017&t=AOkfskcNyjPEaq5T-0)<br/>
@@ -111,6 +112,25 @@ Recursos extras:</br>
 >-	Liberar e restringir requisições, de acordo com a URL e o verbo do protocolo HTTP.
 
 ----
+
+### Modulo 3 do curso
+
+<strong>Checklist do módulo II:</strong>
+- [ ] 	Aprenda a isolar códigos de regras de negócio em uma aplicação
+- [ ] 	Implemente princípios SOLID
+- [ ] 	Documente uma API seguindo o padrão OpenAPI
+- [ ] 	Saiba como escrever testes automatizados em uma aplicação com Spring Boot
+- [ ] 	Realize o build de uma aplicação com Spring Boot
+- [ ] 	Utilize variáveis de ambiente e prepare uma aplicação para o deploy
+
+<strong>Submódulo 1 - Agendamento de consultas</strong>
+>-	Implementei uma nova funcionalidade no projeto;
+>-	Avaliei quando é necessário criar uma classe Service na aplicação;
+>-	Criei uma classe Service, com o objetivo de isolar códigos de regras de negócio, utilizando para isso a anotação @Service;
+>-	Implementei um algoritmo para a funcionalidade de agendamento de consultas;
+>-	Realizei validações de integridade das informações que chegam na API;
+>-	Implementei uma consulta JPQL (Java Persistence Query Language) complexa em uma interface repository, utilizando para isso a anotação @Query.
+
 
 ### Banco de Dados
 
