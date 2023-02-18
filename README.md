@@ -131,18 +131,31 @@ Recursos extras:</br>
 >-	Validações de integridade das informações que chegam na API;
 >-	Aplicado anotação @Query em uma consulta JPQL (Java Persistence Query Language) complexa em uma interface repository.
 
-<strong>Submódulo 2 - Agendamento de consultas</strong>
->-	Utilizado funções de agregação, tais como min, max, avg e sum;
->-	Consultas de relatórios utilizando JPQL;
->-	Select new em consultas JPQL;
->-	Consultas utilizando named queries.
+<strong>Submódulo 2 - Implementar Regras de Negócios com Boas práticas</strong>
+>-	Validações de regras de negócio em classes separadas, utilizando nelas a anotação @Component do Spring;
+>-	Implementei o algoritmo de agendamento de consultas;
+>-	Aplicado princípios SOLID para deixar o código da funcionalidade de agendamento de consultas mais fácil de entender, evoluir e testar.
 
-<strong>Submódulo 3 - Agendamento de consultas</strong>
->-	Quando aplicar estratégias EAGER e LAZY, em consultas de entidades que possuem relacionamentos;
->-	Por que a JPA pode lançar a exception LazyInitializationException em determinadas situações (se fechar a conexao com o banco, nao é possivel carregar os dados);
->-	As boas práticas no carregamento de entidades com relacionamentos;
->-	Como realizar consultas planejadas com o recurso join fetch.
+<strong>Submódulo 3 - Documentação da API</strong>
+>-	Adicionar a biblioteca SpringDoc no projeto para que ela faça a geração automatizada da documentação da API;
+>-	Analisar a documentação do SpringDoc para entender como realizar a sua configuração em um projeto;
+>-	Acessar os endereços que disponibilizam a documentação da API nos formatos yaml e html;
+>-	Utilizar o Swagger UI para visualizar e testar uma API Rest;
+>-	Configurar o JWT na documentação gerada pelo SpringDoc.
 
+<strong>Submódulo 4 - Testes Automatizados</strong>
+>-	Testes automatizados em uma aplicação com Spring Boot;
+>-	Testes automatizados de uma interface Repository, seguindo a estratégia de usar o mesmo banco de dados que a aplicação utiliza;
+>-	Anotação @ActiveProfiles que sobrescreve propriedades do arquivo application.properties, criando outro arquivo chamado application-test.properties que seja carregado apenas ao executar os testes;
+>-	Testes automatizados de uma classe Controller, utilizando a classe MockMvc para simular requisições na API;
+>-	Testar cenários de erro 400 e código 200 no teste de uma classe controller.
+
+<strong>Submódulo 5 - Build do Projeto</strong>
+>-	Como buildar uma aplicação com Spring Boot;
+>-	Utilizado arquivos de propriedades específicos para cada profile, alterando em cada arquivo as propriedades que precisam ser modificadas;
+>-	Configurado informações sensíveis da aplicação, como dados de acesso ao banco de dados, via variáveis de ambiente;
+>-	Build do projeto via Maven;
+>-	Execução da aplicação via terminal, com o comando java -jar, passando as variáveis de ambiente como parâmetro.
 
 ----
 
