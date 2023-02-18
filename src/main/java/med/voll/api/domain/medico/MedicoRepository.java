@@ -9,6 +9,7 @@ import org.springframework.data.jpa.repository.Query;
 
 /**
  * Não há necessidade de criar classes DAO ao extender de JpaRepository
+ * 
  * @author Matielo
  */
 public interface MedicoRepository extends JpaRepository<Medico, Long> {
@@ -17,7 +18,7 @@ public interface MedicoRepository extends JpaRepository<Medico, Long> {
 
 	@Query("""
 			select m from Medico m
-			where 
+			where
 			m.ativo = 1
 			and
 			m.especialidade = :especialidade
@@ -31,4 +32,12 @@ public interface MedicoRepository extends JpaRepository<Medico, Long> {
 			limit 1
 			""")
 	Medico escolherMedicoAleatorioLivreNaData(Especialidade especialidade, LocalDateTime data);
+
+	@Query("""
+			select m.ativo
+			from Medico m
+			where
+			m.id = :id
+			""")
+	Boolean findAtivoById(Long idMedico);
 }

@@ -117,7 +117,7 @@ Recursos extras:</br>
 
 <strong>Checklist do módulo III:</strong>
 - [x] 	Aprenda a isolar códigos de regras de negócio em uma aplicação
-- [ ] 	Implemente princípios SOLID
+- [x] 	Implemente princípios SOLID
 - [ ] 	Documente uma API seguindo o padrão OpenAPI
 - [ ] 	Saiba como escrever testes automatizados em uma aplicação com Spring Boot
 - [ ] 	Realize o build de uma aplicação com Spring Boot
@@ -126,10 +126,23 @@ Recursos extras:</br>
 <strong>Submódulo 1 - Agendamento de consultas</strong>
 >-	Implementei uma nova funcionalidade no projeto;
 >-	Avaliei quando é necessário criar uma classe Service na aplicação;
->-	Criei uma classe Service, com o objetivo de isolar códigos de regras de negócio, utilizando para isso a anotação @Service;
+>-	Anotação @Service utilizado em uma classe Service, com o objetivo de isolar códigos de regras de negócio;
 >-	Implementei um algoritmo para a funcionalidade de agendamento de consultas;
->-	Realizei validações de integridade das informações que chegam na API;
->-	Implementei uma consulta JPQL (Java Persistence Query Language) complexa em uma interface repository, utilizando para isso a anotação @Query.
+>-	Validações de integridade das informações que chegam na API;
+>-	Aplicado anotação @Query em uma consulta JPQL (Java Persistence Query Language) complexa em uma interface repository.
+
+<strong>Submódulo 2 - Agendamento de consultas</strong>
+>-	Utilizado funções de agregação, tais como min, max, avg e sum;
+>-	Consultas de relatórios utilizando JPQL;
+>-	Select new em consultas JPQL;
+>-	Consultas utilizando named queries.
+
+<strong>Submódulo 3 - Agendamento de consultas</strong>
+>-	Quando aplicar estratégias EAGER e LAZY, em consultas de entidades que possuem relacionamentos;
+>-	Por que a JPA pode lançar a exception LazyInitializationException em determinadas situações (se fechar a conexao com o banco, nao é possivel carregar os dados);
+>-	As boas práticas no carregamento de entidades com relacionamentos;
+>-	Como realizar consultas planejadas com o recurso join fetch.
+
 
 ----
 
