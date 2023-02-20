@@ -119,7 +119,7 @@ Recursos extras:</br>
 <strong>Checklist do módulo III:</strong>
 - [x] 	Aprenda a isolar códigos de regras de negócio em uma aplicação
 - [x] 	Implemente princípios [SOLID](https://cursos.alura.com.br/course/spring-boot-3-documente-teste-prepare-api-deploy/task/122586)
-- [ ] 	Documente uma API seguindo o padrão OpenAPI
+- [x] 	Documente uma API seguindo o padrão OpenAPI
 - [ ] 	Saiba como escrever testes automatizados em uma aplicação com Spring Boot
 - [ ] 	Realize o build de uma aplicação com Spring Boot
 - [ ] 	Utilize variáveis de ambiente e prepare uma aplicação para o deploy
