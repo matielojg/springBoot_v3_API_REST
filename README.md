@@ -117,12 +117,12 @@ Recursos extras:</br>
 [Spring Boot 3: documente, teste e prepare uma API para o deploy](https://cursos.alura.com.br/course/spring-boot-3-documente-teste-prepare-api-deploy)</br>
 
 <strong>Checklist do módulo III:</strong>
-- [x] 	Aprenda a isolar códigos de regras de negócio em uma aplicação
-- [x] 	Implemente princípios [SOLID](https://cursos.alura.com.br/course/spring-boot-3-documente-teste-prepare-api-deploy/task/122586)
-- [x] 	Documente uma API seguindo o padrão OpenAPI
-- [ ] 	Saiba como escrever testes automatizados em uma aplicação com Spring Boot
-- [ ] 	Realize o build de uma aplicação com Spring Boot
-- [ ] 	Utilize variáveis de ambiente e prepare uma aplicação para o deploy
+- [x] 	Isolar códigos de regras de negócio em uma aplicação
+- [x] 	Princípios [SOLID] implementados(https://cursos.alura.com.br/course/spring-boot-3-documente-teste-prepare-api-deploy/task/122586)
+- [x] 	API documentada seguindo o padrão OpenAPI
+- [x] 	Escrever testes automatizados em uma aplicação com Spring Boot
+- [x] 	Buildar a aplicação com Spring Boot em .jar
+- [x] 	Proteger variáveis de ambiente e preparo da aplicação para o deploy
 
 <strong>Submódulo 1 - Agendamento de consultas</strong>
 >-	Implementei uma nova funcionalidade no projeto;
@@ -152,8 +152,8 @@ Recursos extras:</br>
 >-	Testar cenários de erro 400 e código 200 no teste de uma classe controller.
 
 <strong>Submódulo 5 - Build do Projeto</strong>
->-	Como buildar uma aplicação com Spring Boot;
->-	Utilizado arquivos de propriedades específicos para cada profile, alterando em cada arquivo as propriedades que precisam ser modificadas;
+>-	Buildar uma aplicação com Spring Boot;
+>-	Isolar propriedades específicos para cada profile, alterando em cada arquivo as propriedades que precisam ser modificadas;
 >-	Configurado informações sensíveis da aplicação, como dados de acesso ao banco de dados, via variáveis de ambiente;
 >-	Build do projeto via Maven;
 >-	Execução da aplicação via terminal, com o comando java -jar, passando as variáveis de ambiente como parâmetro.
