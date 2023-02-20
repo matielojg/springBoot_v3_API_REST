@@ -1,6 +1,6 @@
 _type: export
 __export_format: 4
-__export_date: 2023-02-17T08:15:35.660Z
+__export_date: 2023-02-20T05:26:08.072Z
 __export_source: insomnia.desktop.app:v2022.6.0
 resources:
   - _id: req_8a7c4c05443b48fc86178b49cc47c926
@@ -64,7 +64,7 @@ resources:
     _type: workspace
   - _id: req_9c43b15019d94dd2a7ace7583a548ea1
     parentId: fld_5a5f96233e34403c842ad901488384ac
-    modified: 1676522151746
+    modified: 1676843472895
     created: 1675974409964
     url: localhost:8080/medicos
     name: Listagem de Médicos com Token
@@ -75,7 +75,7 @@ resources:
     headers: []
     authentication:
       type: bearer
-      token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXRpIiwiaXNzIjoiQVBJIFZvbGwubWVkIiwiZXhwIjoxNjc2NTI4MDM0fQ.4I57FKU7VFNCqLthoKb56YjG-EnLlYzdTrigvWlxpTo
+      token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXRpIiwiaXNzIjoiQVBJIFZvbGwubWVkIiwiZXhwIjoxNjc2ODUwNTc1fQ.CO5QFFzmE2aAIDYkD5X5efGAuMKRJnKH_IatsKfF24k
       disabled: false
     metaSortKey: -1676049386302.5
     isPrivate: false
@@ -252,7 +252,7 @@ resources:
     _type: request
   - _id: req_9ab7055c54a14a5aa382df53382eadd3
     parentId: fld_30356bb139bf44eba0aa0feaca79c737
-    modified: 1676125223079
+    modified: 1676843459926
     created: 1676125217147
     url: localhost:8080/pacientes
     name: Listagem de Pacientes
@@ -261,7 +261,9 @@ resources:
     body: {}
     parameters: []
     headers: []
-    authentication: {}
+    authentication:
+      type: bearer
+      token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXRpIiwiaXNzIjoiQVBJIFZvbGwubWVkIiwiZXhwIjoxNjc2ODUwNTc1fQ.CO5QFFzmE2aAIDYkD5X5efGAuMKRJnKH_IatsKfF24k
     metaSortKey: -1676124397983
     isPrivate: false
     settingStoreCookies: true
@@ -397,7 +399,7 @@ resources:
     _type: request
   - _id: req_0fa5d481dbae4159a1d05f3e69996366
     parentId: fld_ef2e9291ba204bb9842458d4ea39193e
-    modified: 1676613682193
+    modified: 1676859195086
     created: 1676494841527
     url: localhost:8080/login
     name: Efetuar Login
@@ -425,6 +427,7 @@ resources:
     headers:
       - name: Content-Type
         value: application/json
+        id: pair_53c15a61a9be4b32bf7c2bf9de8d411b
     authentication:
       type: bearer
       token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXRpIiwiaXNzIjoiQVBJIFZvbGwubWVkIiwiZXhwIjoxNjc2NTI2MzQ3fQ.0tuAEr4segQ8e2ElbfTfpna2vYsP2lWPGuTUwjtc-fY
@@ -450,7 +453,7 @@ resources:
     _type: request_group
   - _id: req_475291f430c943d299ba6590ad8420b5
     parentId: fld_059fc5495ba64cd2a3570cb383f19b9d
-    modified: 1676614813997
+    modified: 1676859228403
     created: 1676613389898
     url: localhost:8080/consultas
     name: Cadastrar Consultas
@@ -460,9 +463,9 @@ resources:
       mimeType: application/json
       text: |-
         {
-        "idPaciente": 2,
-        "idMedico": 2,
-        "data": "2023-10-10T10:00"
+        "idPaciente": 1,
+        "idMedico":1,
+        "data": "2023-11-11T10:00"
         }
     parameters: []
     headers:
@@ -470,7 +473,7 @@ resources:
         value: application/json
     authentication:
       type: bearer
-      token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXRpIiwiaXNzIjoiQVBJIFZvbGwubWVkIiwiZXhwIjoxNjc2NjIwODcyfQ.MwhrEliDwM64Hur1lv5pL-E7M1m4sZvVs8GnT8l7gv0
+      token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXRpIiwiaXNzIjoiQVBJIFZvbGwubWVkIiwiZXhwIjoxNjc2ODY2Mzk2fQ.34al6i_JGUG2siW2kMY6Sxd9wbSOdWDasHs_5hmpq-k
     metaSortKey: -1676049386283.75
     isPrivate: false
     settingStoreCookies: true
@@ -492,7 +495,7 @@ resources:
     _type: request_group
   - _id: req_7dea7dbe91e041359334ca53ebcb098b
     parentId: fld_059fc5495ba64cd2a3570cb383f19b9d
-    modified: 1676614813115
+    modified: 1676859203969
     created: 1676613725914
     url: localhost:8080/consultas
     name: Listar Consultas
@@ -500,19 +503,14 @@ resources:
     method: GET
     body:
       mimeType: application/json
-      text: |-
-        {
-        "idPaciente": 1,
-        "idMedico": 1,
-        "data": "2023-10-10T10:00"
-        }
+      text: ""
     parameters: []
     headers:
       - name: Content-Type
         value: application/json
     authentication:
       type: bearer
-      token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXRpIiwiaXNzIjoiQVBJIFZvbGwubWVkIiwiZXhwIjoxNjc2NjIwODcyfQ.MwhrEliDwM64Hur1lv5pL-E7M1m4sZvVs8GnT8l7gv0
+      token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXRpIiwiaXNzIjoiQVBJIFZvbGwubWVkIiwiZXhwIjoxNjc2ODUzMDExfQ.bRXoXlnXRftpoZHDkIgczT66fVLTS2nPl0RT75sr8VA
     metaSortKey: -1676049386280.625
     isPrivate: false
     settingStoreCookies: true
