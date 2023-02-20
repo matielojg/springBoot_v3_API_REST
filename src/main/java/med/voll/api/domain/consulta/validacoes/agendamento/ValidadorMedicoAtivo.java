@@ -1,26 +1,27 @@
-package med.voll.api.domain.consulta.validacoes;
+package med.voll.api.domain.consulta.validacoes.agendamento;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import med.voll.api.domain.consulta.DadosAgendamentoConsulta;
-import med.voll.api.domain.paciente.PacienteRepository;
+import med.voll.api.domain.medico.MedicoRepository;
 import med.voll.api.infra.exceptions.ValidacaoException;
 
 @Component
-public class ValidadorPacienteAtivo implements ValidadorAgendamentoDeConsultas {
+public class ValidadorMedicoAtivo implements ValidadorAgendamentoDeConsulta {
 
 	@Autowired
-	private PacienteRepository pacienteRepository;
+	private MedicoRepository medicoRepository;
 
 	public void validar(DadosAgendamentoConsulta dados) {
 		if (dados.idMedico() == null) {
 			return;
 		}
 
-		var pacienteEstaAtivo = pacienteRepository.findAtivoById(dados.idPaciente());
-		if (!pacienteEstaAtivo) {
+		var medicoEstaAtivo = medicoRepository.findAtivoById(dados.idMedico());
+		if (!medicoEstaAtivo) {
 			throw new ValidacaoException("Consulta não pode ser agendada com médico exclusivo");
 		}
 	}
+
 }

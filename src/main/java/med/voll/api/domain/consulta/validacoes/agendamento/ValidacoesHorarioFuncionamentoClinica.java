@@ -1,4 +1,4 @@
-package med.voll.api.domain.consulta.validacoes;
+package med.voll.api.domain.consulta.validacoes.agendamento;
 
 import java.time.DayOfWeek;
 
@@ -8,7 +8,7 @@ import med.voll.api.domain.consulta.DadosAgendamentoConsulta;
 import med.voll.api.infra.exceptions.ValidacaoException;
 
 @Component
-public class ValidacoesHorarioFuncionamentoClinica implements ValidadorAgendamentoDeConsultas {
+public class ValidacoesHorarioFuncionamentoClinica implements ValidadorAgendamentoDeConsulta {
 
 	public void validar(DadosAgendamentoConsulta dados) {
 		var dataConsulta = dados.data();
